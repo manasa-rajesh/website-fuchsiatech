@@ -1,0 +1,133 @@
+.text-yellow{
+    color: rgb(232, 193, 63);
+}
+
+.landing-enc{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+/** Landing page **/
+.landing-page-content {
+    display: flex;
+    padding-left: 100px;
+    position: relative;
+    height: 100vh;
+    min-height: 400px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.landing-page-content div h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.social{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+.social div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    -ms-flex-direction: row;
+}
+.social-name{
+    font-size: 0.8rem;
+    margin-right: 10px;
+    font-weight: bold;
+    color: rgb(114, 114, 114);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+.social-name:hover{
+    color: black;
+    transform: scale(1.01);
+}
+.landing-button-1{
+    background-color: rgb(86,119,166) !important;
+    border-color: rgb(86,119,166) !important;
+    color: rgb(239,234,215) !important;
+}
+
+.landing-button-2{
+    background-color: rgb(239,234,215) !important;
+    border-color: rgb(239,234,215) !important;
+    color: rgba(42,50,68) !important;
+}
+
+.down-arrow-enc{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100vh;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.down-arrow-enc div{
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(232, 193, 63);
+}
+.down-arrow-enc div:hover{
+    color: rgba(42,50,68);
+}
+.down-arrow{
+    margin: 0px;
+    font-size: 4.5rem;
+}
+
+@media only screen and (max-width:898px) {
+    .landing-page-content div h1{
+        font-size: 3rem;   
+    }
+}
+@media only screen and (max-width:767px) {
+    .landing-page-content div h1{
+        font-size: 4rem;   
+    }
+    .landing-page-content {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .down-arrow-enc{
+        display: none !important;
+    }
+}
+@media only screen and (max-width:610px) {
+    .landing-page-content div h1{
+        font-size: 3.5rem;   
+    }
+    .social{
+        left: 50px;   
+    }
+
+    .landing-page-content {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (max-width:491px) {
+    .landing-page-content div h1{
+        font-size: 3rem;   
+    }
+}
+@media only screen and (max-width:396px) {
+    .landing-page-content div h1{
+        font-size: 2.5rem;   
+    }
+    .landing-page-content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .social{
+        left: 25px;   
+    }
+}
