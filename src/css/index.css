@@ -2,12 +2,37 @@
     color: rgb(232, 193, 63);
 }
 
+
+/*** Navbar *****/
+.navbar-enc{
+    height: 60px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 11;
+}
+.navbar-enc div{
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    justify-self: flex-start;
+}
+.menu{
+    justify-self: flex-end;
+    cursor: pointer;
+}
+
+
+/** Landing page **/
 .landing-enc{
     top:0;
     left: 0;
 }
-
-/** Landing page **/
 .landing-page-content {
     display: flex;
     padding-left: 100px;
