@@ -2,18 +2,104 @@
     color: rgb(232, 193, 63);
 }
 
+.header{
+    width: auto;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(86,119,166);
+    color: rgb(239,234,215);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.section-enc{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section-enc h3{
+    margin: 20px auto;
+    max-width: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.header-alt{
+    width: auto;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(232, 193, 63);
+    color: rgb(239,234,215);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.section-enc-alt{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.section-enc-alt h3{
+    color: rgb(239,234,215);
+    margin: 20px auto;
+    max-width: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+/**** Services  ****/
+.services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(42,50,68);
+}
+
+.services-carousel div{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(239,234,215);
+}
+.services-carousel div div {
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+.services-card-header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.services-card-logo{
+    margin-bottom: 10px;
+}
+.icon{
+    font-size: 1.5rem;
+}
+
+
 /**** Navbar slider ***/
 .slider-nav{
     background-color: white;
     position: fixed;
     top:0;
-    display: none;
-    right:0;
+    right: -300px;
     height: 100vh;
     z-index: 50;
-    width: 50%;
     min-height: 300px;
-    min-width: 300px;
+    width: 300px;
+    transition: all 0.5s ease-out;
+}
+.slider-show{
+    right: 0%;
 }
 
 .slider-nav .slider{
@@ -41,7 +127,7 @@
 .slider-brand{
     position: absolute;
     left: 20px;
-    top: 30px;
+    top: 40px;
     font-size: 1.5rem;
     color: rgb(34, 34, 34);
 }
@@ -243,27 +329,6 @@
 
 
 /***** About us Page *******/
-.about-enc{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.about{
-    width: auto;
-    padding: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: rgb(86,119,166);
-    color: rgb(239,234,215);
-    border-radius: 10px;
-    font-weight: bold;
-}
-.about-enc h3{
-    margin: 20px auto;
-    max-width: 300px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
 .about-carousel div{
     display: flex;
     -ms-flex-direction: row;
@@ -288,6 +353,14 @@
     margin-bottom: 10px;
 }
 
+
+/*** Contact ***/
+.submit-button {
+    background-color: rgb(86,119,166) !important;
+    color: rgb(239,234,215) !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
 
 /**** Hire Us page ***/
 .hire-us-bg{

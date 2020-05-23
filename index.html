@@ -4,8 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fuchsia Tech</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="/home/vatsalk/Documents/website/src/css/index.css">
+        <link rel="stylesheet" href="/src/css/index.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/e36b2cbe05.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--- Navbar  -->
@@ -13,7 +14,7 @@
         <!--- Side Menu --->
         <div class="slider-nav">
             <div class="slider">
-                <span class="close-slider">
+                <span id="close" class="close-slider">
                     &times;
                 </span>
                 <span class="slider-brand">
@@ -27,7 +28,7 @@
                 </div>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                     <span class="nav-item">
-                        The team
+                        Our services
                         <span class="shadow"></span>
                     </span>
                 </div>
@@ -43,14 +44,6 @@
                         <span class="shadow"></span>
                     </span>
                 </div>
-                <div style="margin-top: 5px; margin-bottom: 5px;">
-                    <span class="nav-item">
-                        Our services
-                        <span class="shadow"></span>
-                    </span>
-                </div>
-
-
             </div>
         </div>
 
@@ -61,11 +54,12 @@
                         Logo
                     </div>
                     <div class="menu">
-                        <i class="material-icons">menu</i>
+                        <i id="open" class="material-icons">menu</i>
                     </div>
                 </div>
             </div>
         </navbar>
+
         <!-- Landing page  -->
         <section>
             <div class="container-fluid landing-enc">
@@ -114,8 +108,8 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
-                        <div class="about-enc">
-                            <span class="about">
+                        <div class="section-enc">
+                            <span class="header">
                                 Why choose us
                             </span>
                             <span>
@@ -127,8 +121,7 @@
                                 <div>
                                     <div>
                                         <div class="about-card-logo">
-                                            <i class="material-icons">
-                                                done_all
+                                            <i class="icon fas fa-check-double">
                                             </i>
                                         </div>
 
@@ -139,8 +132,7 @@
                                     </div>
                                     <div>
                                         <div class="about-card-logo">
-                                            <i class="material-icons">
-                                                timeline
+                                            <i class="icon fas fa-calendar-alt">
                                             </i>
                                         </div>
                                         <span class="about-card-header">
@@ -150,8 +142,7 @@
                                     </div>
                                     <div>
                                         <div class="about-card-logo">
-                                            <i class="material-icons">
-                                                attach_money
+                                            <i class="icon fas fa-rupee-sign">
                                             </i>
                                         </div>
                                         <span class="about-card-header">
@@ -168,10 +159,168 @@
 
         </section>
 
+        <!--- Our services -->
+        <section>
+            <div class="container-fluid services">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
+                        <div class="section-enc-alt">
+                            <span class="header-alt">
+                                Our services
+                            </span>
+                            <span>
+                                <h3>
+                                    How can we complement your team?
+                                </h3>
+                            </span>
+                            <div class="services-carousel">
+                                <div>
+                                    <div>
+                                        <div class="services-card-logo">
+                                            <i class="icon fab fa-android">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Android development
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam natus necessitatibus molestias odio doloremque fugit aperiam perferendis in harum 
+                                    </div>
+                                    <div>
+                                        <div class="services-card-logo">
+                                            <i class="icon fas fa-desktop">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Web development
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam natus necessitatibus molestias odio doloremque fugit aperiam perferendis in harum 
+                                    </div>
+                                    <div>
+                                        <div class="services-card-logo">
+                                            <i class="icon fas fa-pencil-ruler">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Editorial
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam natus necessitatibus molestias odio doloremque fugit aperiam perferendis in harum 
+                                    </div>
+                                    <div>
+                                        <div class="services-card-logo">
+                                            <i class="icon fas fa-brain">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Artificial Intelligence
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam natus necessitatibus molestias odio doloremque fugit aperiam perferendis in harum 
+                                    </div>
+                                    <div>
+                                        <div class="services-card-logo">
+                                            <i class="icon fab fa-adobe">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Graphic Design
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam natus necessitatibus molestias odio doloremque fugit aperiam perferendis in harum 
+                                    </div>
+                                    <div>
+                                        <div class="services-card-logo">
+                                            <i class="icon fas fa-microchip">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Hardware development
+                                        </span>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus totam natus necessitatibus molestias odio doloremque fugit aperiam perferendis in harum 
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- Client testimonials-->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
+                        <div class="section-enc">
+                            <span class="header">
+                                Client testimonials
+                            </span>
+                            <span>
+                                <h3>
+                                    We just opened
+                                </h3>
+                            </span>
+                            <p style="text-align: left;">
+                                We will admit we dont have any client testimonials. But that doesn't mean we're not good at what we do. It means we just set up shop. We have worked individually as freelancers, and developer interns at companies. This is our first shot together, we want to make it count.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---- Contact us  -->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
+                        <div class="section-enc">
+                            <span class="header">
+                                Contact us
+                            </span>
+                            <span>
+                                <h3>
+                                    Get in touch. We promise to try to work something out
+                                </h3>
+                            </span>
+                            <br>
+                            <div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="margin-top: 10px;">
+                                        <div class="col-10 offset-1">
+                                            <form>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Enter your name" id="name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control" placeholder="Enter your email address" id="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" placeholder="Enter your message here"></textarea>  
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn submit-button">Send</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12"  style="margin-top: 10px;">
+                                        <div class="col-10 offset-1">
+                                            <p style="text-align: left;">
+                                                If you don't want to leave a message here, go over to our social handles, and hit us up there. Or drop a mail at
+                                                <div style="text-align: left; color: rgb(86,119,166) "><a style="cursor: pointer;" href="">contact@fuchsiatech.in</a></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!--- Hire us page -->
         <section>
             <div class="container-fluid hire-us-bg">
-                Want an idea to come to life? <span class="hire-us-highlight">Let's connect</span>
+                Want an idea to come to life? <span class="hire-us-highlight">Drop a message</span>
             </div>
         </section>
         <!--- Footer -->
@@ -193,6 +342,6 @@
                 </div>
             </div>
         </footer>
-
+    <script src="/src/js/index.js"></script>
     </body>
 </html>
