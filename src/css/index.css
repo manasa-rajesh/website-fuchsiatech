@@ -3,7 +3,6 @@
 }
 
 .landing-enc{
-    position: absolute;
     top:0;
     left: 0;
 }
@@ -44,7 +43,6 @@
 }
 .social-name:hover{
     color: black;
-    transform: scale(1.01);
 }
 .landing-button-1{
     background-color: rgb(86,119,166) !important;
@@ -129,5 +127,109 @@
     }
     .social{
         left: 25px;   
+    }
+}
+@media only screen and (max-height: 526px) {
+    .social{
+        bottom: 25px;   
+    }
+    .landing-page-content div h1{
+        font-size: 2.5rem;   
+    }
+}
+
+/**** Hire Us page ***/
+.hire-us-bg{
+    background-color: rgb(232, 193, 63);
+    margin: 0;
+    height: 100vh;
+    color: rgba(42,50,68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 3.5rem;
+}
+
+.hire-us-highlight{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(239,234,215);
+    border-bottom-width: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width:767px) {
+    .hire-us-bg{
+        font-size: 2.5rem;
+    }
+}
+@media only screen and (max-width:555px) {
+    .hire-us-bg{
+        font-size: 2rem;
+    }
+}
+
+/**** Footer ***/
+.footer-enc{
+    background-color: rgb(232, 193, 63);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: space-between;
+}
+.footer-name{
+    justify-self: start;
+    margin-left: 50px;
+    font-size: 1.2rem;
+    color: rgba(42,50,68);
+}
+
+.footer-social{
+    justify-self: flex-end;
+    margin-right: 50px;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-social-name{
+    font-size: 1rem;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgba(42,50,68);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 529px) {
+    .footer-name{
+        margin-left: 25px;
+    }
+    .footer-social{
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 453px) {
+    .footer-enc{
+        -ms-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-name{
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .footer-social{
+        margin-right: 0px;
     }
 }
