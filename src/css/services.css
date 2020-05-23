@@ -1,0 +1,34 @@
+/**** Services  ****/
+.services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(42,50,68);
+}
+
+.services-carousel div{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(239,234,215);
+}
+.services-carousel div div {
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+.services-card-header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.services-card-logo{
+    margin-bottom: 10px;
+}
+.icon{
+    font-size: 1.5rem;
+}

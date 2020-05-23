@@ -1,0 +1,114 @@
+/**** Navbar slider ***/
+.slider-nav{
+    background-color: white;
+    position: fixed;
+    top:0;
+    right: -300px;
+    height: 100vh;
+    z-index: 50;
+    min-height: 300px;
+    width: 300px;
+    transition: all 0.5s ease-out;
+}
+.slider-show{
+    right: 0%;
+}
+
+.slider-nav .slider{
+    position: relative;
+    margin: 20px;
+    height: 100%;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+}
+.close-slider{
+    font-size: 2rem;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    color: rgb(114, 114, 114);
+    transition: color 0.5s ease-out;
+    cursor: pointer;
+}
+.close-slider:hover{
+    color: black;
+}
+
+.slider-brand{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    font-size: 1.5rem;
+    color: rgb(34, 34, 34);
+}
+
+.nav-item{
+    font-weight: bold;
+    color: rgb(32, 32, 32);
+    font-size: 1.2rem;
+    position: relative;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.nav-item a{
+    text-decoration: none !important;
+    outline: none;
+    color: inherit;
+}
+.nav-item a:active{
+    color: rgb(32, 32, 32);
+    text-decoration: none !important;
+    outline: none;
+}
+.nav-item .shadow{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 12.5px;
+    width: 0%;
+    transition: width 0.5s ease-out;
+    background-color: rgba(86,119,166,0.5);
+}
+.nav-item:hover .shadow{
+    width: 100%;
+}
+/*** Navbar *****/
+.navbar-enc{
+    height: 60px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 11;
+}
+.navbar-enc div{
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    justify-self: flex-start;
+}
+.menu{
+    justify-self: flex-end;
+    cursor: pointer;
+}
+@media only screen and (max-width:610px) {
+    .navbar-enc div{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width:391px) {
+    .navbar-enc div{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

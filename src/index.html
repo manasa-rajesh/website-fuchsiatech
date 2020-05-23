@@ -3,8 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fuchsia Tech</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="src/css/index.css">
+        <link rel="stylesheet" href="dist/build/css/stylesheet.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/e36b2cbe05.js" crossorigin="anonymous"></script>
     </head>
@@ -22,25 +21,25 @@
                 </span>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                     <span class="nav-item">
-                        Why choose us
+                        <a href="#section1">Why choose us</a>    
                         <span class="shadow"></span>
                     </span>
                 </div>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                     <span class="nav-item">
-                        Our services
+                        <a href="#section2">Our services</a>
                         <span class="shadow"></span>
                     </span>
                 </div>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                     <span class="nav-item">
-                        Client testimonials
+                        <a href="#section3">Client testimonials</a>
                         <span class="shadow"></span>
                     </span>
                 </div>
                 <div style="margin-top: 5px; margin-bottom: 5px;">
                     <span class="nav-item">
-                        Contact us
+                        <a href="#section4">Contact us</a>
                         <span class="shadow"></span>
                     </span>
                 </div>
@@ -54,7 +53,7 @@
                         Logo
                     </div>
                     <div class="menu">
-                        <i id="open" class="material-icons">menu</i>
+                        <i id="open" class="fas fa-bars"></i>
                     </div>
                 </div>
             </div>
@@ -72,10 +71,11 @@
                                     We <span class="text-yellow">design.</span><br>
                                 </h1>
                                 <p>
-                                    Fuchsia Tech is a group of freelancers focused on building what you need. We offer a variety of services to convert your thoughts into a prototype...
+                                    Fuchsia Tech is a group of freelancers focused on building what you need. We offer a variety of services to convert your thoughts into a product, or refine an existing one.
                                 </p>
-                                <button class="btn btn-primary landing-button-1">Hire Us</button>
-                                <button class="btn btn-light landing-button-2">More about us</button>
+                                <a href="#section4"><button class="btn btn-primary landing-button-1">Hire Us</button></a>
+                                <a href="#section2"><button class="btn btn-light landing-button-2">More about us</button></a>
+
                             </div>
                             <div class="social">
                                 <div>
@@ -95,7 +95,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div class="down-arrow-enc">
                             <div>
-                                <span class="down-arrow">&darr;</span>
+                                <a href="#section1"> <span class="down-arrow">&darr;</span></a>
                              </div>
                         </div>
                     </div>
@@ -104,7 +104,7 @@
         </section>
 
         <!--- Why choose us page -->
-        <section>
+        <section id="section1">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
@@ -160,7 +160,7 @@
         </section>
 
         <!--- Our services -->
-        <section>
+        <section  id="section2">
             <div class="container-fluid services">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
@@ -243,7 +243,7 @@
         </section>
 
         <!--- Client testimonials-->
-        <section>
+        <section  id="section3">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
@@ -266,7 +266,7 @@
         </section>
 
         <!---- Contact us  -->
-        <section>
+        <section id="section4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
@@ -304,7 +304,7 @@
                                         <div class="col-10 offset-1">
                                             <p style="text-align: left;">
                                                 If you don't want to leave a message here, go over to our social handles, and hit us up there. Or drop a mail at
-                                                <div style="text-align: left; color: rgb(86,119,166) "><a style="cursor: pointer;" href="">contact@fuchsiatech.in</a></div>
+                                                <div style="text-align: left; color: rgb(86,119,166) "><a style="cursor: pointer;" href="mailto:contact@fuchsiatech.in">contact@fuchsiatech.in</a></div>
                                             </p>
                                         </div>
                                     </div>
@@ -342,6 +342,6 @@
                 </div>
             </div>
         </footer>
-    <script src="src/js/index.js"></script>
+    <script src="dist/build/js/index.js"></script>
     </body>
 </html>
