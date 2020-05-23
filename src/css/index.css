@@ -138,6 +138,54 @@
     }
 }
 
+
+/***** About us Page *******/
+.about-enc{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.about{
+    width: auto;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgb(86,119,166);
+    color: rgb(239,234,215);
+    border-radius: 10px;
+    font-weight: bold;
+}
+.about-enc h3{
+    margin: 20px auto;
+    max-width: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.about-carousel div{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-carousel div div {
+    width: 200px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+.about-card-header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.about-card-logo{
+    margin-bottom: 10px;
+}
+
+
 /**** Hire Us page ***/
 .hire-us-bg{
     background-color: rgb(232, 193, 63);
