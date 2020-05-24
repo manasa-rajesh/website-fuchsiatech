@@ -26,19 +26,24 @@ gulp.task('pack-css', async function (done) {
 
         .pipe(csso())
         .pipe(concat('stylesheet.css'))
-        .pipe(gulp.dest('./docs/dist/build/css'))
+        .pipe(gulp.dest('./docs/dist/css'))
     done();
 });
 
 gulp.task('pack-js', async function (done) {
     gulp.src(['./src/js/*.js'])
        .pipe(concat('index.js'))
-        .pipe(gulp.dest('./docs/dist/build/js'))
+        .pipe(gulp.dest('./docs/dist/js'))
         done();
 
 });
 
+gulp.task('copy-images', async function(done) {
+    gulp.src(['./src/images'])
+        .pipe(gulp.dest('docs/dist/images'));
+        done();
+})
 
 
 
-gulp.task('default', gulp.series('pack-css', 'pack-js', 'create404'));
+gulp.task('default', gulp.series('pack-css', 'pack-js','copy-images', 'create404'));
