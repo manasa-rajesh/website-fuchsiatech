@@ -5,3 +5,19 @@
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
+.loader{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 50%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(239,234,215) ;
+    border-top: 4px solid rgb(232, 193, 63);
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
