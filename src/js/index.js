@@ -9,7 +9,7 @@ function show(){
     setTimeout(() => {
         document.getElementById('preloader').style.display = 'none';
         document.getElementById('main-body').style.display = 'block';
-    }, 500);
+    }, 300);
 }
 
 document.getElementsByTagName('form')[0].addEventListener('submit', (e) => {
