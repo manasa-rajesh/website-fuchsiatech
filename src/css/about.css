@@ -1,24 +1,30 @@
 /***** About us Page *******/
-.about-carousel div{
+
+.about-carousel{
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    color: rgb(239,234,215);
 }
-.about-carousel div div {
+.about-pad{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.about-card {
     width: 200px;
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     -ms-flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    font-size: 1rem;
 }
+
 .about-card-header{
     font-weight: bold;
     margin-bottom: 5px;
