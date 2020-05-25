@@ -5,6 +5,13 @@ document.getElementById("close").addEventListener('click', () => {
     document.getElementsByClassName('slider-nav')[0].classList.remove('slider-show');
 });
 
+function show(){
+    setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('main-body').style.display = 'block';
+    }, 1000);
+}
+
 document.getElementsByTagName('form')[0].addEventListener('submit', (e) => {
     e.preventDefault();
     document.getElementById('submit').innerHTML = `<div><div class="loader"></div></div>`;

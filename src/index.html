@@ -10,9 +10,30 @@
         <link rel="stylesheet" href="dist/css/stylesheet.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/e36b2cbe05.js" crossorigin="anonymous"></script>
+        <style>
+            @keyframes anim {
+                0%{
+                    transform: rotate(0deg);
+              transform-origin: bottom;
+                }
+                100%{
+                    transform: rotate(360deg);
+                      transform-origin: bottom;
+                }
+            }
+        </style>
     </head>
-    <body>
-        <!--- Navbar  -->
+    <body onload="show()">
+    <!----Preloader -->
+    <div id="preloader" style="width: 100%; height: 100vh; flex-direction: column; -ms-flex-direction: column; display: flex; align-items: center; justify-content: center; background-color: rgb(86,119,166);">
+        <div style="position: relative; width: 120px; height: 120px; background-color: rgba(239,234,215, 0.9); border-radius: 50%;">
+            <div style="animation-name: anim; animation-duration: 1s; animation-iteration-count: infinite; position: absolute; border-bottom-left-radius: 5px;border-bottom-right-radius: 5px; border-top-left-radius: 4px; border-top-right-radius: 4px; top: 25px; left: 57.5px; height: 40px; width: 5px; background-color: rgb(86,119,166);;"></div>
+        </div>
+        <div style="max-width: 200px; margin-top: 10px;color: rgba(239,234,215, 1); text-align: center; ">We know time is money. We'll be with you in a moment.</div>
+    </div>
+
+    <div id="main-body" style="display: none;">
+                <!--- Navbar  -->
 
         <!--- Side Menu --->
         <div class="slider-nav">
@@ -186,9 +207,9 @@
                                     How can we complement your team?
                                 </h3>
                             </span>
-                            <div class="services-carousel">
-                                <div>
-                                    <div>
+                            <div>
+                                <div class="services-carousel">
+                                    <div class="services-card services-pad">
                                         <div class="services-card-logo">
                                             <i class="icon fab fa-android">
                                             </i>
@@ -198,7 +219,7 @@
                                         </span>
                                         Want to build apps using either popular cross-platform tools like React Native, or truly native apps for Android or iOS? Either way, we've got you covered. 
                                     </div>
-                                    <div>
+                                    <div class="services-card services-pad">
                                         <div class="services-card-logo">
                                             <i class="icon fas fa-desktop">
                                             </i>
@@ -208,37 +229,7 @@
                                         </span>
                                         Need a static site to showcase your works, or maybe a complete e-commerce product? We build responsive web designs, and scalable backend application so your users are never unhappy
                                     </div>
-                                    <div>
-                                        <div class="services-card-logo">
-                                            <i class="icon fas fa-pencil-ruler">
-                                            </i>
-                                        </div>
-                                        <span class="services-card-header">
-                                            Editorial
-                                        </span>
-                                        Need help writing up content for your digital presense, or maybe an investors pitch? Hit us up to get it done.
-                                    </div>
-                                    <div>
-                                        <div class="services-card-logo">
-                                            <i class="icon fas fa-brain">
-                                            </i>
-                                        </div>
-                                        <span class="services-card-header">
-                                            Artificial Intelligence
-                                        </span>
-                                        Listing out the benefits of this domain would take up most of the site. How about you contact us instead to check out how we may help you incorporating AI into your product. 
-                                    </div>
-                                    <div>
-                                        <div class="services-card-logo">
-                                            <i class="icon fab fa-adobe">
-                                            </i>
-                                        </div>
-                                        <span class="services-card-header">
-                                            Graphic Design & UI/UX
-                                        </span>
-                                        Need to release a poster for your next big event, or want just want a mockup for product? Our team will help you with either of them
-                                    </div>
-                                    <div>
+                                    <div class="services-card services-pad">
                                         <div class="services-card-logo">
                                             <i class="icon fas fa-microchip">
                                             </i>
@@ -248,6 +239,38 @@
                                         </span>
                                         Given that most of us are from an electronics background, we've had our fair share of experience with circuits, and would love helping you with the same.
                                     </div>
+                                    <div class="services-card services-pad">
+                                        <div class="services-card-logo">
+                                            <i class="icon fas fa-brain">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Artificial Intelligence
+                                        </span>
+                                        
+                                        Listing out the benefits of this domain would take up most of the site. How about you contact us instead to check out how we may help you incorporating AI into your product. 
+                                    </div>
+                                    <div class="services-card services-pad">
+                                        <div class="services-card-logo">
+                                            <i class="icon fas fa-pencil-ruler">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Editorial
+                                        </span>
+                                        Need help writing up content for your digital presense, or maybe an investors pitch? Hit us up to get it done.
+                                    </div>
+                                    <div class="services-card services-pad">
+                                        <div class="services-card-logo">
+                                            <i class="icon fab fa-adobe">
+                                            </i>
+                                        </div>
+                                        <span class="services-card-header">
+                                            Graphic Design & UI/UX
+                                        </span>
+                                        Need to release a poster for your next big event, or want just want a mockup for product? Our team will help you with either of them
+                                    </div>
+
                             </div>
                         </div>
                     </div>
@@ -367,62 +390,62 @@
                                     Meet the people behind the computer screens
                                 </h3>
                             </span>
-                            <div class="services-carousel">
-                                <div>
-                                    <div>
+                            <div>
+                                <div class="services-carousel">
+                                    <div class="services-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://imgur.com/UR0CuFP.jpg" style="border-color: rgb(232, 193, 63);">
                                         </div>
-                                        <span style="text-align: center;" class="services-card-header">
+                                        <div style="text-align: center;" class="services-card-header">
                                             Arun
-                                        </span>
+                                        </div>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit facilis consectetur, modi, laudantium, nesciunt asperiores corporis impedit 
                                     </div>
-                                    <div>
+                                    <div class="services-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://imgur.com/YeHlSxZ.png" style="border-color: rgb(232, 193, 63);">
                                         </div>
-                                        <span style="text-align: center;" class="services-card-header">
+                                        <div style="text-align: center;" class="services-card-header">
                                             Manasa
-                                        </span>
+                                        </div>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit facilis consectetur, modi, laudantium, nesciunt asperiores corporis impedit 
                                     </div>
-                                    <div>
+                                    <div class="services-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://imgur.com/Df1b9gi.jpg" style="border-color: rgb(232, 193, 63);">
                                         </div>
-                                        <span style="text-align: center;" class="services-card-header">
+                                        <div style="text-align: center;" class="services-card-header">
                                             Ritika
-                                        </span>
+                                        </div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quis! Ad ut dolorum repudiandae. 
                                     </div>
-                                    <div>
+                                    <div class="services-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://imgur.com/OOsg407.jpg" style="border-color: rgb(181, 232, 63);">
                                         </div>
-                                        <span style="text-align: center;" class="services-card-header">
+                                        <div style="text-align: center;" class="services-card-header">
                                             Ajay
-                                        </span>
+                                        </div>
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quis! Ad ut dolorum repudiandae. 
                                     </div>
-                                    <div>
+                                    <div class="services-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://i.imgur.com/j2y0LLa.jpg" style="border-color: rgb(181, 232, 63);">
                                         </div>
-                                        <span style="text-align: center;" class="services-card-header">
+                                        <div style="text-align: center;" class="services-card-header">
                                             Radhika
-                                        </span>
+                                        </div>
 
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quis! Ad ut dolorum repudiandae. 
                                     </div>
-                                    <div>
+                                    <div class="services-card">
                                         <div class="card-image">
                                             <img loading="lazy" src="https://imgur.com/VE7MtD5.jpg" style="border-color: rgb(239,234,215);">
                                         </div>
-                                        <span style="text-align: center;" class="services-card-header">
+                                        <div style="text-align: center;" class="services-card-header">
                                             Vatsal
-                                        </span>  
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, quis! Ad ut dolorum repudiandae. 
+                                        </div>  
+                                        I'll help you with out with any and all products related to the web. I'm familiar with the MEAN stack and believe that websites should be designed mobile-first. 
                                     </div>
                                 </div>
                                 <span>
@@ -461,6 +484,7 @@
                 </div>
             </div>
         </footer>
+    </div>
     <script src="dist/js/index.js"></script>
     </body>
 </html>
