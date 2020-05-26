@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 /** Landing page **/
 .landing-enc{
     top:0;
@@ -15,6 +17,7 @@
 .landing-page-content div h1{
     font-size: 4rem;
     font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 .social{
     position: absolute;
