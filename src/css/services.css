@@ -39,3 +39,29 @@
 .icon{
     font-size: 1.5rem;
 }
+.founder:nth-child(1){
+    order: 1
+}
+.founder:nth-child(2){
+    order: 2
+}
+.founder:nth-child(3){
+    order: 3
+}
+.founder:nth-child(4){
+    order: 4
+}
+.founder:nth-child(5){
+    order: 5
+}
+.founder:nth-child(6){
+    order: 6
+}
+@media only screen and (max-width: 950px) {
+    .founder:nth-child(1){
+        order: 2
+    }
+    .founder:nth-child(2){
+        order: 1
+    }
+}
