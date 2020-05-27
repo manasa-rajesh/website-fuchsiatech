@@ -29,6 +29,7 @@ html {
 .header:hover:after{
     animation-name: expandanim; 
     animation-duration: 0.5s;   
+    animation-iteration-count: 1;
 }
 @keyframes expandanim{
     0%{
