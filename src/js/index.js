@@ -1,3 +1,7 @@
+
+window.onload = (event) => {
+    show();
+};
 function show(){
     setTimeout(() => {
         document.querySelector('.preloader').style.display = 'none';
@@ -41,7 +45,7 @@ document.getElementsByTagName('form')[0].addEventListener('submit', (e) => {
             }, 2000);
         }
     }
-    xhr.send(JSON.stringify({email: document.getElementById('email').value, text: document.getElementById('message').value, subject:document.getElementById('name').value }));
+    xhr.send(JSON.stringify({email: document.getElementById('email').value, text: document.getElementById('message').value, subject:document.getElementById('subject').value, name: document.getElementById('name').value }));
 
     setTimeout(() => {
  

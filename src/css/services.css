@@ -30,9 +30,6 @@
     justify-content: flex-start;
     transition: transform 0.5s ease-out;
 }
-.content-card:hover {
-    transform: scale(1.01);
-}
 .content-card-header{
     font-weight: bold;
     margin-bottom: 5px;

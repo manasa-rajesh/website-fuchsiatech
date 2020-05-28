@@ -1,16 +1,16 @@
 /********** Navbar *********/
-.navbar{
+.app-navbar{
     height: 60px;
-    position: absolute;
     top:0px;
+    background-color: white;
+    width: 100%;
     left: 0px;
     z-index: 11;
 }
-.navbar div{
+.app-navbar div{
     display: flex;
-    margin-right: 50px;
-    width: 100%;
-    margin-left: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
     justify-content: space-between;
     align-items: center;
     height: 100%;
@@ -19,7 +19,7 @@
     justify-self: flex-start;
 }
 .navbar-logo{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 60px;
     height: 60px;
 }
@@ -29,16 +29,17 @@
     align-items: flex-end;
     cursor: pointer;
 }
+
 @media only screen and (max-width:610px) {
-    .navbar div{
-        margin-left: 25px;
-        margin-right: 25px;
+    .app-navbar div{
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 @media only screen and (max-width:391px) {
-    .navbar div{
-        margin-left: 0px;
-        margin-right: 0px;
+    .app-navbar div{
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 /**** Navbar slider ***/

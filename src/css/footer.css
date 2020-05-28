@@ -78,7 +78,7 @@
 }
 
 @media only screen and (max-width: 453px) {
-    .footer-enc{
+    .footer{
         -ms-flex-direction: column;
         flex-direction: column;
         justify-content: center;

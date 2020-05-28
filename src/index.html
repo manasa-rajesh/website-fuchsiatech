@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/e36b2cbe05.js" crossorigin="anonymous"></script>
     </head>
-    <body onload="show()">
+    <body>
         <!--------------- Preloader ----------->
         <div class="preloader">
             <div class="preloader-clock">
@@ -26,7 +26,7 @@
             <!-------------   Navbar    ------------>
             <header>
                 <nav>
-                    <div class="container-fluid navbar">
+                    <div class="container-fluid app-navbar">
                         <div>
                             <span class="navbar-logo-option">
                                 <img class="navbar-logo" src="icon.png">
@@ -54,7 +54,7 @@
                         <li>
                             <div class="nav-option">
                                 <span class="nav-item">
-                                    <a href="#section1">Why choose us</a>    
+                                    <a href="#section1">Why us</a>    
                                     <span class="shadow"></span>
                                 </span>
                             </div>
@@ -111,16 +111,15 @@
                                     </p>
                                     <a href="#section4"><button class="btn btn-primary landing-button-1">Hire Us</button></a>
                                     <a href="#section2"><button class="btn btn-light landing-button-2">More about us</button></a>
-    
-                                </div>
-                                <div class="social">
-                                    <div>
-                                        <div class="social-name">
-                                            <a href="https://www.instagram.com/fuchsia_tech/">Instagram</a>
+                                    <div class="social">
+                                        <div>
+                                            <div class="social-name">
+                                                <a href="https://www.instagram.com/fuchsia_tech/" rel="noreferrer">Instagram</a>
+                                            </div>
+                                            <div class="social-name">
+                                                <a href="https://www.linkedin.com/company/fuchsiatech/" rel="noreferrer">LinkedIn</a>
+                                            </div>                                    
                                         </div>
-                                        <div class="social-name">
-                                            <a href="https://www.linkedin.com/company/fuchsiatech/">LinkedIn</a>
-                                        </div>                                    
                                     </div>
                                 </div>
                             </div>                        
@@ -144,7 +143,7 @@
                         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
                             <div class="section-content">
                                 <span class="header">
-                                    Why choose us
+                                    Why us
                                 </span>
                                 <span>
                                     <h3>
@@ -293,7 +292,7 @@
             <section id="section3">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-12 offset-0">
+                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-10 offset-1">
                             <div class="section-content">
                                 <span class="header">
                                     Client testimonials
@@ -333,18 +332,18 @@
                                             <div class="col-10 offset-1">
                                                 <form>
                                                     <div class="form-group">
-                                                        <input class="form-control" id="name" placeholder="Enter your name">
+                                                        <input class="form-control" id="name" placeholder="Enter your name" required>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input class="form-control" id="email" placeholder="Enter your email address">
+                                                        <input class="form-control" id="email" placeholder="Enter your email address" required>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input class="form-control" id="subject" placeholder="Subject">
+                                                        <input class="form-control" id="subject" placeholder="Subject" required>
                                                     </div>
                                                     <div class="form-group">
-                                                        <textarea class="form-control" id="message" placeholder="Enter your message here"></textarea>  
+                                                        <textarea class="form-control" id="message" placeholder="Enter your message here" required></textarea>  
                                                     </div>
-                                                    <div id="error" class="form-group error">
+                                                    <div id="error" aria-hidden="true" class="form-group error">
                                                     </div>
                                                     <div class="form-group">
                                                         <button type="submit" id="submit" class="btn submit-button"><span>Send</span></button>
@@ -481,10 +480,10 @@
                     </div>
                     <div class="footer-social">
                         <div class="footer-social-name">
-                            <a href="https://www.linkedin.com/company/fuchsiatech/">LinkedIn</a>
+                            <a href="https://www.linkedin.com/company/fuchsiatech/" rel="noreferrer">LinkedIn</a>
                         </div>
                         <div class="footer-social-name">
-                            <a href="https://www.instagram.com/fuchsia_tech/">Instagram</a>
+                            <a href="https://www.instagram.com/fuchsia_tech/" rel="noreferrer">Instagram</a>
                         </div>
                     </div>
                 </div>
