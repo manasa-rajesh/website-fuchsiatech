@@ -4,7 +4,6 @@ html {
 .content{
     display: none;
 }
-
 .text-yellow{
     color: rgb(232, 193, 63);
 }
@@ -46,12 +45,17 @@ html {
 }
 
 
-.section-enc{
+.section-content-alt{
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
-.section-enc h3{
+.section-content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.section-content-alt h3{
     margin: 20px auto;
     max-width: 300px;
     font-size: 1.5rem;
@@ -81,13 +85,20 @@ html {
     animation-duration: 0.5s;   
 }
 
-.section-enc-alt{
+.section-content-alt{
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
 }
 
-.section-enc-alt h3{
+.section-content h3{
+    margin: 20px auto;
+    max-width: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;    
+}
+
+.section-content-alt h3{
     color: rgb(239,234,215);
     margin: 20px auto;
     max-width: 300px;
@@ -102,4 +113,7 @@ a{
 a:active{
     text-decoration: none !important;
     color: inherit !important;
+}
+.left-align-text{
+    text-align: left;
 }

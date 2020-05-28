@@ -1,11 +1,10 @@
-/**** Services  ****/
-.services {
+/**** Services and team  ****/
+.section-alt-bg {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: rgba(42,50,68);
 }
-
-.services-carousel{
+.content-wrapper{
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -13,12 +12,10 @@
     justify-content: center;
     color: rgba(42,50,68);
 }
-.services-pad{
+.content-card {
+    padding: 20px;
     padding-left: 25px;
     padding-right: 25px;
-}
-.services-card {
-    padding: 20px;
     flex: 0 0 250px;
     font-size: 1rem;
     margin: 20px;
@@ -32,14 +29,12 @@
     align-items: center;
     justify-content: flex-start;
 }
-.services-card-header{
+.content-card-header{
     font-weight: bold;
     margin-bottom: 5px;
 }
-.services-card-logo{
+.content-card-logo{
     margin-bottom: 10px;
-}
-.icon{
     font-size: 1.5rem;
 }
 
@@ -70,7 +65,7 @@
     }
 }
 
-.card-image img{
+.content-card-image img{
     width: 120px;
     margin-bottom: 20px;
     border-radius: 50%;
@@ -81,5 +76,36 @@
 }
 .text-color-white{
     color:  rgba(239,234,215,1);
-    margin-top: 20px;
+    padding-top: 20px !important;
+}
+
+
+.about-card {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-card-header{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.about-card-logo{
+    margin-bottom: 10px;
+}
+.about-card:nth-child(1) {
+    color:rgb(84, 109, 168);
+}
+.about-card:nth-child(2) {
+    color: rgba(42,50,68);
+}
+.about-card:nth-child(3) {
+    color: rgb(44, 129, 22);
 }

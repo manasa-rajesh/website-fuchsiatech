@@ -5,6 +5,9 @@
     padding-left: 50px !important;
     padding-right: 50px !important;
 }
+.error{
+  text-align: left; color:rgb(255,99,71)
+}
 .loader{
     width: 30px;
     height: 30px;
@@ -15,6 +18,9 @@
     border-color: rgb(239,234,215) ;
     border-top: 4px solid rgb(232, 193, 63);
     animation: spin 2s linear infinite;
+}
+.mail-ref{
+  text-align: left; color: rgb(86,119,166);
 }
 
 @keyframes spin {
