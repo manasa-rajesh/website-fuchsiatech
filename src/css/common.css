@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+.content{
+    display: none;
+}
 
 .text-yellow{
     color: rgb(232, 193, 63);

@@ -1,16 +1,16 @@
-document.getElementById("open").addEventListener('click', () => {
-    document.getElementsByClassName('slider-nav')[0].classList.add('slider-show');
-});
-document.getElementById("close").addEventListener('click', () => {
-    document.getElementsByClassName('slider-nav')[0].classList.remove('slider-show');
-});
-
 function show(){
     setTimeout(() => {
-        document.getElementById('preloader').style.display = 'none';
-        document.getElementById('main-body').style.display = 'block';
-    }, 300);
+        document.querySelector('.preloader').style.display = 'none';
+        document.querySelector('.content').style.display = 'block';
+    }, 100);
 }
+
+document.getElementById("open").addEventListener('click', () => {
+    document.getElementsByClassName('sliding-nav-outlet')[0].classList.add('slider-show');
+});
+document.getElementById("close").addEventListener('click', () => {
+    document.getElementsByClassName('sliding-nav-outlet')[0].classList.remove('slider-show');
+});
 
 document.getElementsByTagName('form')[0].addEventListener('submit', (e) => {
     e.preventDefault();

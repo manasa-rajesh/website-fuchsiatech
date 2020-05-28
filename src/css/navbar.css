@@ -1,5 +1,48 @@
+/********** Navbar *********/
+.navbar{
+    height: 60px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    z-index: 11;
+}
+.navbar div{
+    display: flex;
+    margin-right: 50px;
+    width: 100%;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar-logo-option{
+    justify-self: flex-start;
+}
+.navbar-logo{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+}
+.navbar-menu-option{
+    justify-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+@media only screen and (max-width:610px) {
+    .navbar div{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+@media only screen and (max-width:391px) {
+    .navbar div{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
 /**** Navbar slider ***/
-.slider-nav{
+.sliding-nav-outlet{
     background-color: white;
     position: fixed;
     top:0;
@@ -13,8 +56,7 @@
 .slider-show{
     right: 0%;
 }
-
-.slider-nav .slider{
+.slider{
     position: relative;
     margin: 20px;
     height: 100%;
@@ -22,6 +64,9 @@
     -ms-flex-direction: column;
     flex-direction: column;
     justify-content: center;
+}
+.slider-brand img{
+    width: 40px; height: 40px;
 }
 .close-slider{
     font-size: 2rem;
@@ -43,7 +88,9 @@
     font-size: 1.2rem;
     color: rgb(34, 34, 34);
 }
-
+.nav-option{
+    margin-top: 5px; margin-bottom: 5px;
+}
 .nav-item{
     font-weight: bold;
     color: rgb(32, 32, 32);
@@ -77,43 +124,7 @@
 .nav-item:hover .shadow{
     width: 100%;
 }
-/*** Navbar *****/
-.navbar-enc{
-    height: 60px;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    z-index: 11;
-}
-.navbar-enc div{
-    display: flex;
-    margin-right: 50px;
-    margin-left: 50px;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-.logo-enc{
-    justify-self: flex-start;
-}
-.logo{
-    margin-top: 20px;
-    width: 60px;
-    height: 60px;
-}
-.menu{
-    justify-self: flex-end;
-    cursor: pointer;
-}
-@media only screen and (max-width:610px) {
-    .navbar-enc div{
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-}
-@media only screen and (max-width:391px) {
-    .navbar-enc div{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+li{
+    text-decoration: none;
+    list-style: none;
 }
