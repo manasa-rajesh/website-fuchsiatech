@@ -24,8 +24,26 @@
 }
 
 .contact-image{
-  width: 80%;
+  width: 100%;
 }
+.pad-text{
+  padding-top: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .contact-image{
+    width: 50%;
+  }
+  .pad-text{
+    padding-top: 0px;
+  }
+}
+@media only screen and (max-width: 434px) {
+  .contact-image{
+    width: 60%;
+  }
+}
+
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
