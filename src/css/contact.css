@@ -23,6 +23,10 @@
   text-align: left; color: rgb(86,119,166);
 }
 
+.contact-image{
+  width: 80%;
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
