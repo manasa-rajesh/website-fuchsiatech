@@ -46,4 +46,4 @@ gulp.task('copy-images', async function(done) {
 
 
 
-gulp.task('default', gulp.series('pack-css', 'pack-js','copy-images', 'create404'));
+gulp.task('default', gulp.series('minify-html','pack-css', 'pack-js', 'create404'));
